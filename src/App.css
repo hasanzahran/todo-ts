@@ -1,38 +1,62 @@
-.App {
+body {
+  background: #eee;
+  color: #111;
+  font-size: 16px;
+}
+h1 {
   text-align: center;
+  color: #777;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 600px;
+  margin: 40px auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-list {
+  list-style: none;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-list > li {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.completed-todo {
+  color: #999;
+  text-decoration: line-through;
+}
+.todo-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-actions > button {
+  margin: 0 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 16px;
+  height: 32px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+.filter-todo {
+  list-style: none;
+  margin: 10x 0;
+  padding: 0;
+}
+.filter-todo > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.todo-filter {
+  font-size: 16px;
+  height: 32px;
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.error-msg {
+  border: 1px solid red;
 }
